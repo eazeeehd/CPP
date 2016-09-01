@@ -1,0 +1,16 @@
+//program to take number input 
+ 
+#include “stdafx.h” 
+#include <iostream> 
+ 
+using namespace std; 
+ 
+void main() 
+{ 
+ 	int num; 
+ 
+ 	cout << "Enter a four digit number :";  	cin >> num; 
+ 
+ 	cout << num << " divided by 2 is " << num / 2  << "\n"; 
+ 	 
+} 
