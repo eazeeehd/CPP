@@ -1,0 +1,30 @@
+// Thursday_PM_FirstProject.cpp : Defines the entry point for the console application.
+/*
+ Peter Kemley
+ 1/9/2016
+ */
+//include words for libraries
+#include "stdafx.h" //this holds all compile and linkage for included libraries
+#include <iostream> //IN/OUT TO CONSOLE
+#include <string> //includes string datatype
+
+//global variables
+
+//declation of methods to be used
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[]) //main method for working in
+{
+	//read input and displays to console
+	//string variable to hold name
+	string name;
+
+	//output to console
+	cout << "what is your name?";
+	//read in name
+	cin >> name;
+	//output text and variable to console
+
+	cout << "Hello " << name << " !!!" <<endl; //console output command
+	return 0;
+}
