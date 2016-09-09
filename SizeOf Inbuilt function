@@ -1,0 +1,45 @@
+// Finding Sizes.cpp : Defines the entry point for the console application.
+/*
+ * Program to demonstrate the size of primitive
+ * Uses inbuilt function sizeof()
+ */
+
+//Header File
+#include "stdafx.h"
+#include <iostream>
+
+//Global Variables
+
+//method delarations
+
+//statement
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	//Declarations
+	int number = 45;
+	long int longnumber = 10032;
+	//find size of char, shortint, int, long int, bool, float, double, long double
+	//Char - find the size of a single character
+	cout << "The Memory Size Of Char In Bytes Is : " << sizeof('A') << endl;
+	//short int- find the memory size of the short data type
+	cout << "The memory size of short in bytes is : " << sizeof(short) << endl;
+	//int - declare a variable of type int and find size of variable
+	cout << "The memory size of int called number in bytes is : " << sizeof(number) << endl;
+	//long-int - find the memory size of the int data type
+	cout << "The memory size of long int in bytes is : " << sizeof(longnumber) << endl;
+	//boolean - find the memory size of the boolean data type
+	cout << "The memory size of boolean in bytes is : " << sizeof(bool) << endl;
+	//float - find the memory size of the int data type
+	cout << "The memory size of boolean in bytes is : " << sizeof(float) << endl;
+	//double - find the memory size of the double data type
+	cout << "The memory size of double in bytes is : " << sizeof(double) << endl;
+	//long-double - find the memory size of the long-double data type
+	cout << "The memory size of long-double in bytes is : " << sizeof(long double) << endl;
+
+
+	return 0;
+}
+
