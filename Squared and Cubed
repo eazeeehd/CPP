@@ -1,0 +1,50 @@
+// square and cube.cpp : Defines the entry point for the console application.
+
+/*  Develop a program which prompts the user to enter a number and then
+	calculates the square and the cube of that number and outputs the
+	results. This is the last of the global variable exercises!
+ */
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+//methods
+void input();
+void calculations();
+void output();
+
+//global variables
+int num;
+int square;
+int cube;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	input();
+	calculations();
+	return 0;
+}
+
+void input()
+	{
+		cout << "Enter a number ";
+		cin >> num;
+	}
+
+void calculations()
+	{
+		square = (num*num);
+		cube = (num*num*num);
+		output();
+	}
+
+	void output()
+{
+	cout << "Your number squared was : " << square << endl;
+	cout << "Your number cubed was : " << cube << endl;
+}
