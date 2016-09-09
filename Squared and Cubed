@@ -4,7 +4,7 @@
 	calculates the square and the cube of that number and outputs the
 	results. This is the last of the global variable exercises!
  */
-
+system ("cls");
 
 #include "stdafx.h"
 #include <iostream>
