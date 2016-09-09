@@ -1,0 +1,40 @@
+// Temperature Conversion.cpp : Defines the entry point for the console application.
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+int ftemp;
+int celcius;
+void input();
+void calculations();
+void output();
+
+	
+	int _tmain(int argc, _TCHAR* argv[])
+	{	
+		input();
+		calculations();
+		return 0;
+	}
+	
+
+	void input()
+	{
+		cout << "What is the temperature in Fahrenheit ?";
+		cin >> ftemp;
+
+	}
+
+	void calculations()
+	{
+		//Deduct 32, then multiply by 5, then divide by 9
+		celcius = (ftemp-32) * 5 / 9;
+		output();
+	}
+	
+	void output()
+	{
+		cout << ftemp << " in celcius is " << celcius << endl; //console output command
+	}
