@@ -1,0 +1,49 @@
+// Exam Grades.cpp : Defines the entry point for the console application.
+/*
+Develop a program which prompts for three exam grades and
+calculates the average of the three grades. Again use global variables
+and three separate methods.
+1 prompt user to enter three separate grades
+2 calculate average
+3 print output
+*/
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+//Global Variables
+double grade1, grade2, grade3;
+double average;
+//Methods
+void input();
+void calculations();
+void output();
+
+int _tmain(int argc, _TCHAR* argv[])
+{	
+	input();
+	calculations();
+	return 0;
+}
+
+void input()
+{
+	cout << "Enter Grade 1 ";
+	cin >> grade1;
+	cout << "Enter Grade 2 ";
+	cin >> grade2;
+	cout << "Enter Grade 3 ";
+	cin >> grade3;
+}
+
+void calculations()
+{
+	average = (grade1 + grade2 + grade3)/3;
+	output();
+}
+
+void output()
+{
+	cout << "Grade Average Was " << average << " ";
+}
