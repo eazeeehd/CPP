@@ -1,0 +1,40 @@
+//This program introduces void methods as used in C++
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+// Global declaration of variables
+int a = 4, b = 8,
+result_add, result_subtract, result_multiply, result_divide;
+
+// declaration of methods
+void calculate();
+void print_result();
+
+// method definitions
+void calculate()
+{
+result_add = a + b;
+result_subtract = b - a;
+result_multiply = a * b;
+result_divide = b / a;
+print_result();
+}
+void print_result()
+{
+cout << "the result of addition of a + b is "<< result_add <<
+"\n\n";
+cout << "the result of subtraction of b - a is "<<
+result_subtract << "\n\n";
+cout << "the result of multiplication of a x b is "<<
+result_multiply << "\n\n";
+cout << "the result of division of a / b is "<< result_divide
+<< "\n\n";
+}
+void main()
+{
+cout << "The value of a is " << a << " The value of b is " << b
+<< "\n\n";
+calculate();
+}
