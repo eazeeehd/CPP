@@ -1,0 +1,52 @@
+// MPG
+/*		At the beginning of a car journey the driver ensures that the car's 
+		fuel tank is full and records the odometer reading. After the journey he records 
+		the new reading and how much fuel it took to refill the tank. Develop a 
+		program which will calculate the fuel consumption.
+*/
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+//methods
+void input();
+void calculations();
+void output();
+
+//global variables
+double consumption = 0.0;
+int distance_travelled;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	input();
+	calculations();
+	return 0;
+}
+
+void input()
+{
+		int first, second;
+		cout << "What was your first reading : ";
+		cin >> first;
+		cout << "What was your second reading : ";
+		cin >> second;
+		distance_travelled = second - first;
+}
+
+void calculations()
+{
+	double refill, refill_litres;
+	cout << "How many litres have you topped up : ";
+	cin >> refill_litres;
+	refill = refill_litres * 0.219969;
+	consumption = distance_travelled/refill;
+	output();
+}
+
+void output()
+{
+	cout << "Your MPG was : " << consumption << endl;
+}
