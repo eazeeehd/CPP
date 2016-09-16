@@ -21,7 +21,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 void input();
 {
-
+	cout << "BLAHBLAH";
+	cin >> VARIABLE;
 }
 
 void calculations()
@@ -31,5 +32,5 @@ void calculations()
 
 void output()
 {
-
+	cout << "BLAHBLAHBLAH" << VARIABLE << endl;
 }
