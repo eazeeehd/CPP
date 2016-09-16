@@ -1,0 +1,47 @@
+//Centimeters to inches
+//Inches to CM
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+//methods
+void input();
+void calculations();
+void output();
+
+//global variables
+double cm, inches;
+double inches1, cm1;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	system("cls");
+	input();
+	calculations();
+	return 0;
+}
+
+void input()
+{
+	cout << "How many cm would you like to convert? : ";
+	cin >> cm;
+	cout << "How many inches would you like to convert? : ";
+	cin >> inches1;
+
+}
+
+void calculations()
+{
+	inches = cm / 2.54;
+	cm1 = inches1 * 2.54;
+	output();
+}
+
+void output()
+{
+	cout << "Your CM in Inches is : " << inches << endl;
+	cout << "Your Inches in CM is : " << cm1 << endl;
+}
