@@ -1,0 +1,38 @@
+// Currency Conversion
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+//methods
+void input();
+void calculations();
+void output();
+
+//global variables
+double GBP;
+double conversion;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	system("cls");
+	input();
+	calculations();
+	return 0;
+}
+void input()
+{
+	cout << "Enter how much GBP would you like to convert to Euros ";
+	cin >> GBP;
+}
+
+void calculations()
+{
+	conversion = GBP * 1.18;
+	output();
+}
+
+void output()
+{
+	cout << "Your GBP Converted is : " << conversion << endl;
+}
