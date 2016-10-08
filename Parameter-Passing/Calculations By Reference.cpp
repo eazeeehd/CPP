@@ -42,6 +42,7 @@ void input_output()
 	cout << "4. Divide" << endl;
 	
 	cin >> user;
+	//do{
 	if (user == 1)
 	{
 		//add
@@ -74,7 +75,7 @@ void input_output()
 	{
 	    cout << "Your Selection was not an option please try again" << endl;	
 	}
-}
+}//while((user >=1)&&(user <=4));
 
 void add(int num1_in, int num2_in, double & answer_out)
 {
