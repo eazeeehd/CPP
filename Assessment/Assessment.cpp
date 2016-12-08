@@ -70,7 +70,7 @@ void number_function()
 	//creating the variables
 	int num, factorial=1;
 	//Ask for the number.
-    cout << "Enter a number to calculate it's factorial" << endl;  
+    cout << "Hello " << tech << "! Enter a number to calculate it's factorial" << endl;  
 	//read in number
     cin >> num;
 	//start of for loop
@@ -118,7 +118,7 @@ void string_function()
 	//Initialising the variable name
 	string name = "";
 	//asking the user for their name
-	cout << "Please enter your name! ";
+	cout << "Hello " << tech << "! Please enter your name! ";
 	//cin.ignore is used to get rid of the system spaces
 	cin.ignore();
 	getline(cin, name);
